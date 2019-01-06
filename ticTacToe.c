@@ -112,10 +112,10 @@ int main(int argc, char const *argv[])
 
 		} while(status == GAME_CONTINUE);
 
-		printf("\n\nDo you wanna play again?: ");
+		printf("\n\nDo you wanna play again? (y/n): ");
 		scanf(" %c", &playAgain);
 		getchar();
-		if (toupper(playAgain) == 'E') {
+		if (toupper(playAgain) == 'Y') {
 			initializeBoard();
 			currentPlayerName = p1Name;
 			currentPlayerSymbol = p1Symbol;
